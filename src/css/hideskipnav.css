@@ -1,0 +1,8 @@
+.hideSkipNav {
+    position: absolute;
+    left: -1000px;
+}
+.hideSkipNav:focus {
+    position: unset;
+    left: 0px;
+}

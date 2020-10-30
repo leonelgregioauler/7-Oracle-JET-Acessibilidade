@@ -1,0 +1,266 @@
+/*
+    Document   : override
+    Created on : 2020-01-24
+    Author     : Donald Raikes
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+.sendOffScreen {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.emp-details {
+  padding-left: 80px; 
+  width: 200px;
+}
+
+.emp-dept {
+  font-size: 14px; 
+  font-weight: 400; 
+  font-style: italic; 
+  margin-bottom: 10px;
+}
+
+.emp-name {
+  font-size: 20px; 
+  font-weight: bolder;
+}
+
+.demo-filmstrip-item {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+    
+  .demo-stretch-items {
+    height: 100%;
+  }
+
+  .fs-container {
+    width: 420px;
+  }
+
+  .small-cell {
+      width: 20%;
+  }
+
+  .med-cell {
+      width: 40%;
+  }
+  
+  .demo-stretch-items .oj-filmstrip-item-container {
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .chart-label {
+    padding-left: 40px;
+    font-weight: bolder;
+  }
+
+  .item-image {
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+
+  .item-title {
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: start;
+  }
+
+  .item-location {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+  }
+
+  .item-count {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+  }
+
+  .table-size {
+    height: 500px;
+  }
+
+  .button-set-width {
+    min-width: 50px;
+  }
+
+  /* custom button colors */
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active), .demo-button-purple.oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active),
+  .demo-button-purple.oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-button {
+    color: #b300b3; }
+  
+  .demo-button-purple.oj-buttonset .oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-icon,
+  .demo-button-purple.oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-icon {
+    color: #cd00cd; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-active.oj-button-full-chrome, .demo-button-purple.oj-button-jqui.oj-active.oj-button-full-chrome,
+  .demo-button-purple.oj-button.oj-active.oj-button-full-chrome .oj-button-button {
+    background-color: #800080;
+    border-color: #800080; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-selected.oj-button-full-chrome:not(.oj-disabled), .demo-button-purple.oj-button-jqui.oj-selected.oj-button-full-chrome:not(.oj-disabled),
+  .demo-button-purple.oj-button.oj-selected.oj-button-full-chrome:not(.oj-disabled) .oj-button-button {
+    background-color: #800080;
+    border-color: #800080; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-hover.oj-button-half-chrome:not(.oj-active):not(.oj-selected), .demo-button-purple.oj-button-jqui.oj-hover.oj-button-half-chrome:not(.oj-active):not(.oj-selected),
+  .demo-button-purple.oj-button.oj-hover.oj-button-half-chrome:not(.oj-active):not(.oj-selected) .oj-button-button {
+    color: #b300b3; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-active.oj-button-half-chrome, .demo-button-purple.oj-button-jqui.oj-active.oj-button-half-chrome,
+  .demo-button-purple.oj-button.oj-active.oj-button-half-chrome .oj-button-button {
+    background-color: #800080;
+    border-color: #800080; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-selected.oj-button-half-chrome:not(.oj-disabled), .demo-button-purple.oj-button-jqui.oj-selected.oj-button-half-chrome:not(.oj-disabled),
+  .demo-button-purple.oj-button.oj-selected.oj-button-half-chrome:not(.oj-disabled) .oj-button-button {
+    background-color: #800080;
+    border-color: #800080; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-selected.oj-hover.oj-button-half-chrome:not(.oj-disabled), .demo-button-purple.oj-button-jqui.oj-selected.oj-hover.oj-button-half-chrome:not(.oj-disabled),
+  .demo-button-purple.oj-button.oj-selected.oj-hover.oj-button-half-chrome:not(.oj-disabled) .oj-button-button {
+    color: #cd00cd; }
+  
+  .demo-button-purple.oj-buttonset .oj-button.oj-hover.oj-button-half-chrome:not(.oj-active):not(.oj-selected) .oj-button-icon,
+  .demo-button-purple.oj-button.oj-hover.oj-button-half-chrome:not(.oj-active):not(.oj-selected) .oj-button-icon {
+    color: #cd00cd; }
+  
+  .demo-button-purple.oj-buttonset .oj-button.oj-selected.oj-hover.oj-button-half-chrome:not(.oj-disabled) .oj-button-icon,
+  .demo-button-purple.oj-button.oj-selected.oj-hover.oj-button-half-chrome:not(.oj-disabled) .oj-button-icon {
+    color: #cd00cd; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-hover.oj-button-outlined-chrome:not(.oj-active):not(.oj-selected), .demo-button-purple.oj-button-jqui.oj-hover.oj-button-outlined-chrome:not(.oj-active):not(.oj-selected),
+  .demo-button-purple.oj-button.oj-hover.oj-button-outlined-chrome:not(.oj-active):not(.oj-selected) .oj-button-button {
+    color: #b300b3; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-active.oj-button-outlined-chrome, .demo-button-purple.oj-button-jqui.oj-active.oj-button-outlined-chrome,
+  .demo-button-purple.oj-button.oj-active.oj-button-outlined-chrome .oj-button-button {
+    background-color: #800080;
+    border-color: #800080; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-selected.oj-button-outlined-chrome:not(.oj-disabled), .demo-button-purple.oj-button-jqui.oj-selected.oj-button-outlined-chrome:not(.oj-disabled),
+  .demo-button-purple.oj-button.oj-selected.oj-button-outlined-chrome:not(.oj-disabled) .oj-button-button {
+    background-color: #800080;
+    border-color: #800080; }
+  
+  .demo-button-purple.oj-buttonset .oj-button-jqui.oj-selected.oj-hover.oj-button-outlined-chrome:not(.oj-disabled), .demo-button-purple.oj-button-jqui.oj-selected.oj-hover.oj-button-outlined-chrome:not(.oj-disabled),
+  .demo-button-purple.oj-button.oj-selected.oj-hover.oj-button-outlined-chrome:not(.oj-disabled) .oj-button-button {
+    color: #cd00cd; }
+  
+  .demo-button-purple.oj-buttonset .oj-button.oj-hover.oj-button-outlined-chrome:not(.oj-active):not(.oj-selected) .oj-button-icon,
+  .demo-button-purple.oj-button.oj-hover.oj-button-outlined-chrome:not(.oj-active):not(.oj-selected) .oj-button-icon {
+    color: #cd00cd; }
+  
+  .demo-button-purple.oj-buttonset .oj-button.oj-selected.oj-hover.oj-button-outlined-chrome:not(.oj-disabled) .oj-button-icon,
+  .demo-button-purple.oj-button.oj-selected.oj-hover.oj-button-outlined-chrome:not(.oj-disabled) .oj-button-icon {
+    color: #cd00cd; }
+  
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-default.oj-button-full-chrome,
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-focus-only.oj-button-full-chrome, .demo-button-error.oj-button-jqui.oj-default.oj-button-full-chrome, .demo-button-error.oj-button-jqui.oj-focus-only.oj-button-full-chrome,
+  .demo-button-error.oj-button.oj-default.oj-button-full-chrome .oj-button-button,
+  .demo-button-error.oj-button.oj-focus-only.oj-button-full-chrome .oj-button-button {
+    background-color: #dd3333;
+    background-image: none;
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: none; }
+  
+  .demo-button-error.oj-buttonset .oj-button.oj-default.oj-button-full-chrome .oj-button-icon,
+  .demo-button-error.oj-buttonset .oj-button.oj-focus-only.oj-button-full-chrome .oj-button-icon,
+  .demo-button-error.oj-button.oj-default.oj-button-full-chrome .oj-button-icon,
+  .demo-button-error.oj-button.oj-focus-only.oj-button-full-chrome .oj-button-icon {
+    color: #ffffff; }
+  
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active), .demo-button-error.oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active),
+  .demo-button-error.oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-button {
+    background-color: #f51b1b;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: none; }
+  
+  .demo-button-error.oj-buttonset .oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-icon,
+  .demo-button-error.oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-icon {
+    color: #ffffff; }
+  
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-active.oj-button-full-chrome, .demo-button-error.oj-button-jqui.oj-active.oj-button-full-chrome,
+  .demo-button-error.oj-button.oj-active.oj-button-full-chrome .oj-button-button {
+    background-color: #a81c1c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: none; }
+  
+  .demo-button-error.oj-buttonset .oj-button.oj-active.oj-button-full-chrome .oj-button-icon,
+  .demo-button-error.oj-button.oj-active.oj-button-full-chrome .oj-button-icon {
+    color: #ffffff; }
+  
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-selected.oj-button-full-chrome:not(.oj-disabled), .demo-button-error.oj-button-jqui.oj-selected.oj-button-full-chrome:not(.oj-disabled),
+  .demo-button-error.oj-button.oj-selected.oj-button-full-chrome:not(.oj-disabled) .oj-button-button {
+    background-color: #a81c1c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: none; }
+  
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled), .demo-button-error.oj-button-jqui.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled),
+  .demo-button-error.oj-button.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled) .oj-button-button {
+    background-color: #bd2020;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: none; }
+  
+  .demo-button-error.oj-buttonset .oj-button.oj-selected.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon,
+  .demo-button-error.oj-button.oj-selected.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon {
+    color: #ffffff; }
+  
+  .demo-button-error.oj-buttonset .oj-button.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon,
+  .demo-button-error.oj-button.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon {
+    color: #ffffff; }
+  
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-disabled.oj-button-full-chrome, .demo-button-error.oj-button-jqui.oj-disabled.oj-button-full-chrome,
+  .demo-button-error.oj-button.oj-disabled.oj-button-full-chrome .oj-button-button {
+    background-color: #dd3333;
+    border-color: transparent;
+    color: #ffffff;
+    opacity: 0.4; }
+  
+  .demo-button-error.oj-buttonset .oj-button.oj-disabled.oj-button-full-chrome .oj-button-icon,
+  .demo-button-error.oj-button.oj-disabled.oj-button-full-chrome .oj-button-icon {
+    color: #ffffff; }
+  
+  .demo-button-error.oj-buttonset .oj-button-jqui.oj-disabled.oj-selected.oj-button-full-chrome, .demo-button-error.oj-button-jqui.oj-disabled.oj-selected.oj-button-full-chrome,
+  .demo-button-error.oj-button.oj-disabled.oj-selected.oj-button-full-chrome .oj-button-button {
+    color: #ffffff;
+    background-color: #a81c1c;
+    border-color: transparent; }
+  
+  .demo-button-error.oj-buttonset .oj-button.oj-disabled.oj-selected.oj-button-full-chrome .oj-button-icon,
+  .demo-button-error.oj-button.oj-disabled.oj-selected.oj-button-full-chrome .oj-button-icon {
+    color: #ffffff; 
+	}
+
+.h3Style {
+  font-size: 2rem;
+    font-weight: lighter;
+	  line-height: 2.5rem; 
+	  }

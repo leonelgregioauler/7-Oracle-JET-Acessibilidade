@@ -1,0 +1,62 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h3>Organization</h3>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <h4>Organization Tree View</h4>
+      <div>
+		<h3>The Organization View:</h3>
+        <oj-tree-view id="treeview" data="[[dataProvider]]" selection-mode="single"
+          aria-label="Organization Tree View - select an employee to display details."
+          on-selected-changed="[[selectionHandler]]" expanded="{{expanded}}">
+          <template slot="itemTemplate" data-oj-as="row">
+            <oj-bind-if test="[[isLeaf(row.data.isLeaf)]]">
+              <span class="demo-person-icon-24 demo-icon-font-24"></span>
+              <span>
+                <oj-bind-text value="[[row.data.title]]"></oj-bind-text>
+              </span>
+            </oj-bind-if>
+            <oj-bind-if test="[[!isLeaf(row.data.isLeaf)]]">
+              <span class="demo-people-icon-24 demo-icon-font-24" style="vertical-align: middle;"></span>
+              <span class="oj-treeview-item-text">
+                <oj-bind-text value="[[row.data.title]]"></oj-bind-text>
+              </span>
+            </oj-bind-if>
+          </template>
+        </oj-tree-view>
+      </div>
+    </div>
+    <div class="oj-flex-item oj-sm-6">
+      <h4>Employee Details</h4>
+      <div>
+        <oj-bind-if test="[[!itemSelected()]]">
+          <div>
+            <p>Select an employee from the organization tree to see details.</p>
+          </div>
+        </oj-bind-if>
+        <oj-bind-if test="[[itemSelected()]]">
+          <div>
+            <oj-form-layout id="empdetails" label-edge="top">
+              <oj-input-number id="empno" label-hint="Employee Id" value="{{empDetails().empno}}" readonly="true">
+              </oj-input-number>
+              <oj-input-text id="ename" label-hint="Employee Name" value="{{empDetails().ename}}"></oj-input-text>
+              <oj-select-single id="job" label-hint="Job Title" data="[[jobOptions]]" value="{{empDetails().job}}">
+              </oj-select-single>
+              <oj-input-date id="hiredate" label-hint="Hire date" value="{{empDetails().hiredate}}"></oj-input-date>
+              <oj-input-number id="salary" label-hint="Salary" value="{{empDetails().sal}}" min="0" step="1">
+              </oj-input-number>
+              <oj-input-text id="mgr-id" label-hint="Manager Id" value="{{empDetails().mgr}}" readonly="true">
+              </oj-input-text>
+              <oj-radioset id="dept-id" label-hint="Departments" options="[[depsDataProvider]]"
+                aria-label="Departments"
+                value="[[empDetails().deptno]]"></oj-radioset>
+            </oj-form-layout>
+          </div>
+        </oj-bind-if>
+      </div>
+    </div>
+  </div>
+</div>

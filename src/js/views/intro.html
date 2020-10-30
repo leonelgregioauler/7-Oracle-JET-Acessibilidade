@@ -1,0 +1,22 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <div id="mainContainer">
+    <oj-tab-bar selection="{{selection.path}}" edge="top" data="[[dataProvider]]">
+      <template slot="itemTemplate" data-oj-as="item">
+        <li>
+          <a href="#">
+            <oj-bind-text value="[[item.data.detail.label]]"></oj-bind-text>
+          </a>
+        </li>
+      </template>
+    </oj-tab-bar>
+    <div id="pageContent">
+      <div class="oj-flex">
+        <oj-module config="[[module.koObservableConfig]]" style="width: 100%;"></oj-module>
+      </div>
+    </div>
+  </div>
+</div>

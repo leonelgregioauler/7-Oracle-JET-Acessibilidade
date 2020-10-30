@@ -1,0 +1,123 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.  The Universal
+ Permissive License (UPL), Version 1.0 -->
+<div class="oj-hybrid-padding">
+  <h2>Overview</h2>
+  <div class="oj-flex oj-md-flex-wrap-nowrap">
+    <div class="oj-flex-item oj-sm-12 oj-md-4 oj-sm-margin-4x-horizontal
+	oj-panel">
+      <h3>Description</h3>
+
+      <p>
+        This Oracle JET web application has been written to illustrate how to
+        add accessibility features into an existing web application.
+      </p>
+
+      <h4>The Introduction Page</h4>
+      <p>
+        The introduction page contains a tabbar with four tabs on it. Each tab
+        illustrates different Oracle JET components and how they can be made
+        accessible.
+      </p>
+      <ul>
+        <li>
+          The Overview tab provides a couple of colored buttons which need to be
+          made accessible to both color-blind and screen reader users. There is
+		  also a panel which illustrates the use of text-spacing attributes.
+        </li>
+        <li>
+          The Organization page illustrates an Oracle JET TreeView and an
+          associated data form.
+        </li>
+        <li>
+          The Employees tab illustrates the use of an Oracle JET table, an edit
+          form in a dialog, and a message box.
+        </li>
+        <li>
+          The Departments tab illustrates the use of an Oracle JET filmstrip
+          component, an Oracle JET DataGrid, and an Oracle JET bar chart.
+        </li>
+      </ul>
+
+      <br />
+      <h4 class="h4Style">The Resources Page:</h4>
+      <p>
+        The resources page provides a list of links to additional resources for
+        Oracle JET, web Accessibility and various International accessibility
+        laws.
+      </p>
+	  <p>The Resources page also has intentionally been created with various
+	  keyboard accessibility issues for demonstration purposes.</p>
+      <br />
+      <p>
+        <span on-click="[[openWCAG]]"
+          >Click here to open the Web Content Accessibility Guidelines
+          v2.1</span
+        >
+        which will be refferenced frequently throughout the learning path.
+      </p>
+    </div>
+    <div class="oj-flex-item oj-sm-12 oj-md-4 oj-sm-margin-4x-horizontal
+	oj-panel">
+      <h3>Use of Color</h3>
+      <p>
+        This panel illustrates the challenges faced when only color is used to
+        identify an item on the page.
+      </p>
+      <p>
+        How would a completely blind screen reader user or someone who is
+        color-blind complete the below task?
+      </p>
+
+      <br />
+      <br />
+      <span class="h3Style">Tasks:</span>
+      <ul>
+        <li>
+          <p>Press the green button below.</p>
+        </li>
+        <li>
+          <p>Press the red button.</p>
+        </li>
+      </ul>
+      <oj-toolbar
+        id="myToolbar"
+        aria-label="Editing Toolbar"
+        :class="[[{'oj-toolbar-top-border': isSelected('oj-toolbar-top-border'), 
+              'oj-toolbar-bottom-border': isSelected('oj-toolbar-bottom-border')}]]">
+        <oj-button
+          id="chat"
+          class="oj-button-confirm button-set-width"
+          chroming="solid"
+          on-oj-action="[[greenActivated]]">
+        </oj-button>
+        <oj-button
+          id="paint"
+          class="demo-button-error button-set-width"
+          chroming="solid"
+          on-oj-action="[[redActivated]]">
+        </oj-button>
+        <oj-button
+          id="bookmark"
+          class="demo-button-purple button-set-width"
+          chroming="solid"
+          on-oj-action="[[purpleActivated]]">
+        </oj-button>
+      </oj-toolbar>
+    </div>
+    <div class="oj-flex-item oj-sm-12 oj-md-4 oj-sm-margin-4x-horizontal
+	oj-panel">
+      <h3>Text Spacing</h3>
+      <p>Success Criterion 1.4.12 - Text Spacing</p>
+      <div>
+        <h4>Normal text</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <hr />
+      <div class="textSpacing">
+        <h4>Expanded Text</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+</div>
